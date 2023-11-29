@@ -1,39 +1,46 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import SearchBar from '../components/searchBar'
+import { useEffect, useState } from 'react';
+import { Container, Row }from 'react-bootstrap';
+import MovieList from './components/MoviesList';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import SearchForm from './components/SearchForm';
+import MyNavbar from './components/MyNavbar';
+import MyCarousel from './components/MyCarousel';
+import Footer from './components/Footer';
 
+const App = () => {
+  const [movies, setMovies] = useState ([]);
+    
+  const getMovieRequest = async () => {
+    const url = "http://www.omdbapi.com/?s=Pirates of the Caribbean&apikey=5e6f12dc"
 
-function App() {
-  // const [movieURL, setURL] = useState({})
-  // const baseURL = 'http://www.omdbapi.com/?apikey='
+    const response = await fetch(url);
+    const responseJson = await response.json();
 
-  // const apiKey = '5c02e86e'
-  // useEffect(() => {
-  //       fetch(baseURL+ apiKey +'&t=jumanji')
-  //       .then(response => response.json())
-  //       .then(data => {
-  //         setURL(data.Poster)
-  //         console.log(data)
-  //       })
-  //       .catch(error => console.log(error))
-  // }, [])
+    console.log(responseJson);
+    setMovies(responseJson.Search)
+  };
+
+  useEffect(() => {
+    getMovieRequest();
+  }, []);
 
   return (
-    <div className='container'>
-      <header className='siteHeader'>
-        <div id="sitetitle">
-          <h1>CinephiList</h1>
-          <h3>your personal movie library</h3>
-        </div>
-        <div id="navbar">
-          <nav>Home</nav>
-          <nav>Browse</nav>
-          <nav>Login</nav>
-        </div>
-      </header>
-      <SearchBar />
-    </div>
-  )
-}
+    <>
+      <MyNavbar />
+      <SearchForm />
+      <MyCarousel />
 
-export default App
+      <Container className='movie-app'>
+        <p> <b> Trending now</b></p>
+          <Row>
+          <MovieList movies={movies}/>
+          </Row>
+      </Container>
+
+      <Footer />
+    </>
+  );
+};
+
+export default App;

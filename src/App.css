@@ -1,9 +1,9 @@
-
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+.background {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
   width: 100vw;
+  height: 100vh;
 }
 
 .siteHeader {
@@ -65,4 +65,10 @@
   max-height: 200px;
   overflow-y: scroll;
   margin-bottom: 30px;
+}
+
+/*Carousel*/
+
+.carousel {
+  overflow-x: scroll;
 }

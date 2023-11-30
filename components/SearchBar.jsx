@@ -13,9 +13,10 @@ const SearchBar = () => {
         fetch(baseURL+ apiKey +'&s='+ value)
         .then(response => response.json())
         .then(data => {
-            const resultArray = data.Search.filter(item => {
-                return value && item && item.Title
-            })
+            const resultArray = data.Search
+            // .filter(item => {
+            //     return value && item && item.Title
+            // })
             setResultsList(resultArray)
             console.log(`Data received from omdb: ${resultArray}`)
         })

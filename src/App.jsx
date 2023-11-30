@@ -1,25 +1,13 @@
-import { useState, useEffect } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
-import SearchBar from '../components/searchBar'
-
+import SearchBar from '../components/SearchBar'
+import useApiRequest from '../components/useApiRequest'
+import FeaturedCarousel from '../components/featuredCarousel/FeaturedCarousel'
 
 function App() {
-  // const [movieURL, setURL] = useState({})
-  // const baseURL = 'http://www.omdbapi.com/?apikey='
-
-  // const apiKey = '5c02e86e'
-  // useEffect(() => {
-  //       fetch(baseURL+ apiKey +'&t=jumanji')
-  //       .then(response => response.json())
-  //       .then(data => {
-  //         setURL(data.Poster)
-  //         console.log(data)
-  //       })
-  //       .catch(error => console.log(error))
-  // }, [])
 
   return (
-    <div className='container'>
+    <div className='background'>
       <header className='siteHeader'>
         <div id="sitetitle">
           <h1>CinephiList</h1>
@@ -32,6 +20,7 @@ function App() {
         </div>
       </header>
       <SearchBar />
+      <FeaturedCarousel />
     </div>
   )
 }

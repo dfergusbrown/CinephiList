@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import SearchForm from './components/SearchForm';
 import MyNavbar from './components/MyNavbar';
-import MyCarousel from './components/MyCarousel';
 import Footer from './components/Footer';
 
 const App = () => {

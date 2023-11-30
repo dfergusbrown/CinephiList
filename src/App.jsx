@@ -30,7 +30,6 @@ const App = () => {
       <MyNavbar />
       <SearchForm />
 
-
       <Container className='movie-app'>
         <p> <b> Trending now</b></p>
           <Row>

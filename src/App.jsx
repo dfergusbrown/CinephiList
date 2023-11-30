@@ -29,7 +29,7 @@ const App = () => {
     <>
       <MyNavbar />
       <SearchForm />
-      <MyCarousel />
+
 
       <Container className='movie-app'>
         <p> <b> Trending now</b></p>

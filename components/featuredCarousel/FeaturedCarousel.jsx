@@ -6,7 +6,7 @@ const FeaturedCarousel = () => {
 
     const randomArray = []
     for (let i = 0; randomArray.length < 3; i++) {
-        let newRandomSelection = Math.floor(Math.random() * 124);
+        let newRandomSelection = Math.floor(Math.random() * 123);
         if (!randomArray.includes(AFItop100list[newRandomSelection])) {
             randomArray.push(AFItop100list[newRandomSelection])
         }

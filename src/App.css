@@ -71,4 +71,5 @@
 
 .carousel {
   overflow-x: scroll;
+  flex-wrap: nowrap;
 }

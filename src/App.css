@@ -31,4 +31,17 @@ footer {
 
 .footerText{
   color: black;
+<<<<<<< HEAD
+=======
+  max-height: 200px;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+}
+
+/*Carousel*/
+
+.carousel {
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+>>>>>>> c3714a8 (Recommended films fix)
 }

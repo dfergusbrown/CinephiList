@@ -1,8 +1,8 @@
-import { Nav } from "react-bootstrap"
-
+import { Link } from "react-router-dom"
 
 
 const SearchResultsList = ({results}) => {
+    
     if(!results) {
         return null
     } else if (results.length === 0) {
@@ -13,7 +13,18 @@ const SearchResultsList = ({results}) => {
             <div className="resultsList">
                 {
                     results.map((result, id) => {
-                        return <Nav.Link eventKey={result.Title} className="searchResultLink"><div key={id}>{result.Title}</div></Nav.Link>
+                        const { Title } = result
+                        return (
+                            <Link to={{
+                            pathname: '/detailPage',
+                            state: "yo yo yo"
+                            }} 
+                            className="searchResultLink"
+                            key={id}
+                            >
+                                <div>{Title}</div>
+                            </Link>
+                        )
                     })
                 }
             </div>

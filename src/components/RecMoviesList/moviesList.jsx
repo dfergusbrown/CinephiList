@@ -19,8 +19,8 @@ const MovieList = (props) => {
             const posterURL = useApiRequest(item)
             
             return (
-                <div className="movieItem">
-                    <img src={posterURL.apiData.Poster} key={item}/>
+                <div className="movieItem" key={item}>
+                    <img src={posterURL.apiData.Poster} />
                 </div>
             )
         })}

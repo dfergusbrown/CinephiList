@@ -1,3 +1,4 @@
+import { Nav } from "react-bootstrap"
 
 
 
@@ -12,7 +13,7 @@ const SearchResultsList = ({results}) => {
             <div className="resultsList">
                 {
                     results.map((result, id) => {
-                        return <div key={id}>{result.Title}</div>
+                        return <Nav.Link eventKey={result.Title} className="searchResultLink"><div key={id}>{result.Title}</div></Nav.Link>
                     })
                 }
             </div>

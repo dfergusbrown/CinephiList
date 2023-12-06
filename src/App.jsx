@@ -3,7 +3,7 @@ import './App.css';
 import MyNavbar from './components/MyNavbar';
 import Footer from './components/Footer';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './HomePage';
+import HomePage from './Pages/HomePage';
 import DetailPage from './Pages/DetailPage';
 
 const App = () => {

@@ -1,5 +1,5 @@
-import SearchForm from "./components/SearchBar/SearchForm"
-import MovieList from "./components/RecMoviesList/moviesList"
+import SearchForm from "../components/SearchBar/SearchForm"
+import MovieList from "../components/RecMoviesList/moviesList"
 
 const HomePage = () => { 
 

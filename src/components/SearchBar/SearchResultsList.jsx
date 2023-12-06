@@ -15,10 +15,8 @@ const SearchResultsList = ({results}) => {
                     results.map((result, id) => {
                         const { Title } = result
                         return (
-                            <Link to={{
-                            pathname: '/detailPage',
-                            state: "yo yo yo"
-                            }} 
+                            <Link to='/detailPage'
+                            state={Title}
                             className="searchResultLink"
                             key={id}
                             >

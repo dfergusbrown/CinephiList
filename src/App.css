@@ -42,3 +42,10 @@ footer {
   overflow-x: scroll;
   flex-wrap: nowrap;
 }
+
+/*SearchResults*/
+
+.searchResultLink:hover {
+  background-color: white;
+  color: black;
+}

@@ -20,7 +20,7 @@ function SearchForm() {
           //     return value && item && item.Title
           // })
           setResultsList(resultArray)
-          console.log(`Data received from omdb: ${resultArray}`)
+          // console.log(`Data received from omdb: ${resultArray}`)
       })
       .catch(error => console.log(error))
   }

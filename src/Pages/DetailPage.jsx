@@ -1,36 +1,40 @@
 import useApiRequest from "../components/useApiRequest"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import { useLocation } from "react-router-dom"
 import './DetailPage.css';
 
-const DetailPage = (props) => { 
+const DetailPage = (props) => {
     const location = useLocation()
-    
-    const detailInfo = useApiRequest(location.state).apiData
-    console.log(detailInfo)
-    
-    return(
-        <Container className="mt-5">
+
+    console.log(location.state)
+    const detailInfo = useApiRequest(location.state)
+
+    const details = { "Title": "Title", "Released": "Released", "BoxOffice": "Box Office Earnings", "Director": "Director(s)", "Genre": "Genre", "Rated": "Rating", "Runtime": "Runtime" };
+
+    console.log(detailInfo);
+    return (
+        <Container id="detailsPage">
+            <div id="detailTitle">{`${detailInfo.apiData.Title} (${detailInfo.apiData.Year})`}</div>
             <Row>
-                <Col className="d-flex justify-content-center">
-                    <img src={detailInfo.Poster} />
+                <Col>
+                    <img id="detailImage" src={detailInfo.apiData.Poster} />
                 </Col>
-                <Col className="infogrid">
-                    <div className="movieTitle"><h3 className="text-center my-4">{detailInfo.Title}</h3></div>
-                    <div className="director1">Director</div>
-                        <div className="director2">{detailInfo.Director}</div>
-                    <div className="writer1">Writer</div>
-                        <div className="writer2">{detailInfo.Writer}</div>
-                    <div className="actor1">Starring</div>
-                        <div className="actor2">{detailInfo.Actors}</div>
-                    <div className="genre1">Genre</div>
-                        <div className="genre2">{detailInfo.Genre}</div>
-                    <div className="released1">Released</div>
-                        <div className="released2">{detailInfo.Released}</div>
+                <Col id="detailsListCol">
+                    {Object.keys(details).map((key) => {
+                        return (
+                            <>
+                                <div id="detailsList">{`${details[key]}: ${detailInfo.apiData[key]}`}</div>
+                            </>
+                        )
+                    })}
+                    <div><Button variant="outline-secondary">Add To Collection</Button></div>
+                    <div><Button variant="outline-success">I Want This Movie!</Button></div>
                 </Col>
             </Row>
-            
-        </Container>
+            <Row id="plot">
+                {`${detailInfo.apiData.Plot}`}
+            </Row>
+        </Container >
     )
 }
 

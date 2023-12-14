@@ -1,10 +1,11 @@
-body{
+body {
   background-color: #141414;
-  color:#ffffff;
-  font-family: Archivo Black;
+  color: #ffffff;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 600;
 }
 
-.movie-app .row{
+.movie-app .row {
   overflow-x: auto;
   padding: 10px;
   flex-wrap: nowrap;
@@ -16,7 +17,7 @@ body{
   flex: 1 1 160px;
 }
 
-.search-form{
+.search-form {
   margin-top: 5%;
   border-style: double;
 }
@@ -29,10 +30,9 @@ footer {
   background-color: #ffffff;
 }
 
-.footerText{
+.footerText {
   color: black;
   max-height: 200px;
-  overflow-y: scroll;
   margin-bottom: 30px;
 }
 
@@ -49,3 +49,27 @@ footer {
   background-color: white;
   color: black;
 }
+
+/*DetailsPage*/
+
+#detailsListCol div {
+  margin-bottom: 2rem;
+  white-space: pre;
+}
+
+#detailImage {
+  /* max-width: 60%; */
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+#detailTitle {
+  font-size: 3rem;
+  margin: 10px auto;
+}
+
+#detailsList {
+  margin-bottom: 2rem;
+}
+
+#plot {}

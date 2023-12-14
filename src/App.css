@@ -27,12 +27,12 @@ footer {
   width: 100%;
   height: 3.5rem;
   background-color: #ffffff;
+  margin-top: 5%;
 }
 
 .footerText{
   color: black;
   max-height: 200px;
-  overflow-y: scroll;
   margin-bottom: 30px;
 }
 
@@ -48,4 +48,47 @@ footer {
 .searchResultLink:hover {
   background-color: white;
   color: black;
+}
+
+#detailTitle{
+  font-size:x-large;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  margin-top: 1%;
+  margin-right: 5%;
+}
+
+#detailsPage{
+  margin-top: 5%;
+
+}
+
+#detailImage{
+  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-left: 15%;
+  width: 60%;
+}
+
+#plot{
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 20%;
+  margin-right: 5%;
+}
+
+#detailsList{
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#movieButton{
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+
+.detailCard{
+  margin-bottom: 20%;
 }

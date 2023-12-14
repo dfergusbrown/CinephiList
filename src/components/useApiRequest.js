@@ -7,7 +7,7 @@ const useApiRequest = title => {
   const apiKey = '5c02e86e'
 
   useEffect(() => {
-      fetch(baseURL + apiKey +'&t='+ title)
+    fetch(baseURL + apiKey + '&t=' + title + '&plot=full')
       .then(response => response.json())
       .then(data => {
         setData(data)

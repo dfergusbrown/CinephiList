@@ -33,7 +33,6 @@ footer {
 .footerText {
   color: black;
   max-height: 200px;
-  overflow-y: scroll;
   margin-bottom: 30px;
 }
 
@@ -59,7 +58,7 @@ footer {
 }
 
 #detailImage {
-  width: 35vw;
+  /* max-width: 60%; */
   margin: auto;
   margin-bottom: 2rem;
 }

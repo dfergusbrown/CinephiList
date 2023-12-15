@@ -1,5 +1,5 @@
 import useApiRequest from "../components/useApiRequest"
-import { Container, Row, Col, Button, Card } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import { useLocation } from "react-router-dom"
 
 const DetailPage = (props) => {
@@ -13,14 +13,12 @@ const DetailPage = (props) => {
     console.log(detailInfo);
     return (
         <Container id="detailsPage">
-            <Card id="detailCard">
-
             <div id="detailTitle">{`${detailInfo.apiData.Title} (${detailInfo.apiData.Year})`}</div>
             <Row>
-                <Col sm={8} md={6}>
+                <Col>
                     <img id="detailImage" src={detailInfo.apiData.Poster} />
                 </Col>
-                <Col id="detailsListCol" sm={4} md={6}>
+                <Col id="detailsListCol">
                     {Object.keys(details).map((key) => {
                         return (
                             <>
@@ -28,14 +26,13 @@ const DetailPage = (props) => {
                             </>
                         )
                     })}
-                    <div id="movieButton"><Button variant="outline-secondary">Add To Collection</Button>
-                    <Button variant="outline-success">I Want This Movie!</Button></div>
-                    <div id="plot">
-                        {`${detailInfo.apiData.Plot}`}
-                    </div>
+                    <div><Button variant="outline-secondary">Add To Collection</Button></div>
+                    <div><Button variant="outline-success">I Want This Movie!</Button></div>
                 </Col>
             </Row>
-            </Card>
+            <Row id="plot">
+                {`${detailInfo.apiData.Plot}`}
+            </Row>
         </Container >
     )
 }

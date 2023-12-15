@@ -1,10 +1,11 @@
-body{
+body {
   background-color: #141414;
-  color:#ffffff;
-  font-family: Archivo Black;
+  color: #ffffff;
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: 600;
 }
 
-.movie-app .row{
+.movie-app .row {
   overflow-x: auto;
   padding: 10px;
   flex-wrap: nowrap;
@@ -16,7 +17,7 @@ body{
   flex: 1 1 160px;
 }
 
-.search-form{
+.search-form {
   margin-top: 5%;
   border-style: double;
 }
@@ -30,7 +31,7 @@ footer {
   margin-top: 5%;
 }
 
-.footerText{
+.footerText {
   color: black;
   max-height: 200px;
   margin-bottom: 30px;
@@ -50,45 +51,26 @@ footer {
   color: black;
 }
 
-#detailTitle{
-  font-size:x-large;
-  margin-left: 2%;
-  margin-bottom: 2%;
-  margin-top: 1%;
-  margin-right: 5%;
+/*DetailsPage*/
+
+#detailsListCol div {
+  margin-bottom: 2rem;
+  white-space: pre;
 }
 
-#detailsPage{
-  margin-top: 5%;
-
+#detailImage {
+  /* max-width: 60%; */
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
-#detailImage{
-  margin-bottom: 5%;
-  margin-top: 3%;
-  margin-left: 15%;
-  width: 60%;
+#detailTitle {
+  font-size: 3rem;
+  margin: 10px auto;
 }
 
-#plot{
-  margin-left: 2%;
-  margin-top: 2%;
-  margin-bottom: 20%;
-  margin-right: 5%;
+#detailsList {
+  margin-bottom: 2rem;
 }
 
-#detailsList{
-  margin-bottom: 2%;
-  margin-left: 2%;
-  margin-top: 2%;
-}
-
-#movieButton{
-  margin-left: 2%;
-  margin-bottom: 5%;
-}
-
-
-.detailCard{
-  margin-bottom: 20%;
-}
+#plot {}

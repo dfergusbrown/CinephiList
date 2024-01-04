@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <Nav className="justify-content-center pt-2 footerText">
-        <Nav.Link href="#" className="text-center" style={{ color: 'black' }}>
+        <Nav.Link href="meetthedevelopers" className="text-center" style={{ color: 'black' }}>
           Meet the Developers
         </Nav.Link>
       </Nav>

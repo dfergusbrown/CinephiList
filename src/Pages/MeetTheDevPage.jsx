@@ -16,7 +16,7 @@ const MeetTheDevPage = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ullamcorper magna. Phasellus vulputate metus id leo ullamcorper sodales.
                 </Card.Text>
                 <Card.Text>
-                  <Card.Link href="https://www.linkedin.com/in/dfergusbrown/" title="LinkedIn" target="_blank"><Image src="../src/assets/linkedin-square-icon.svg" width="20rem" fluid /></Card.Link>
+                  <Card.Link href="https://www.linkedin.com/in/dfergusbrown/" title="LinkedIn" target="_blank"><Image src="../src/assets/linkedin-white-icon.svg" width="20rem" fluid /></Card.Link>
                   <Card.Link href="https://github.com/dfergusbrown" title="GitHub" target="_blank"><Image src="../src/assets/github-icon.svg" width="20rem" fluid /></Card.Link>
                   <Card.Link href="https://dfergusbrown.github.io/devPortfolio/" title="Portfolio" target="_blank"><Image src="../src/assets/link-icon.svg" width="20rem" fluid /></Card.Link>
                 </Card.Text>

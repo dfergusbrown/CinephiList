@@ -5,14 +5,15 @@ const MeetTheDevPage = () => {
 
   return (
     <>
-      <Container fluid="md" className="meetTheDevelopers">
+      <Container className="meetTheDevelopers">
         <Row>
-          <Col xs={3} md={3}>
-            <Card>
-              <Card.Img variant="top" src="/src/assets/fergus.png" />
+          <Col>
+            <Card className="developersCard">
+              <Card.Img src="/src/assets/fergus.png" />
               <Card.Body>
+                <Card.Title>Fergus Brown</Card.Title>
                 <Card.Text>
-                  Fergus Brown
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ullamcorper magna. Phasellus vulputate metus id leo ullamcorper sodales.
                 </Card.Text>
                 <Card.Text>
                   <Card.Link href="https://www.linkedin.com/in/dfergusbrown/" title="LinkedIn" target="_blank"><Image src="../src/assets/linkedin-square-icon.svg" width="20rem" fluid /></Card.Link>
@@ -22,12 +23,13 @@ const MeetTheDevPage = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={3} md={3}>
-            <Card>
-              <Card.Img variant="top" src="/src/assets/logan.png" />
+          <Col>
+            <Card className="developersCard">
+              <Card.Img src="/src/assets/logan.png" />
               <Card.Body>
+                <Card.Title>Logan Hall</Card.Title>
                 <Card.Text>
-                  Logan Hall
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ullamcorper magna. Phasellus vulputate metus id leo ullamcorper sodales.
                 </Card.Text>
                 <Card.Text>
                   <Card.Link href="https://www.linkedin.com/in/loganthall/" title="LinkedIn" target="_blank"><Image src="../src/assets/linkedin-square-icon.svg" width="20rem" fluid /></Card.Link>
@@ -37,12 +39,15 @@ const MeetTheDevPage = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={3} md={3}>
-            <Card>
-              <Card.Img variant="top" src="/src/assets/hazel.png" />
+        </Row>
+        <Row>
+          <Col>
+            <Card className="developersCard">
+              <Card.Img src="/src/assets/nate.png" />
               <Card.Body>
+                <Card.Title>Nate Rollins</Card.Title>
                 <Card.Text>
-                  Hazel Whitfield
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ullamcorper magna. Phasellus vulputate metus id leo ullamcorper sodales.
                 </Card.Text>
                 <Card.Text>
                   <Card.Link href="https://www.linkedin.com/in/hazel-whitfield/" title="LinkedIn" target="_blank"><Image src="../src/assets/linkedin-square-icon.svg" width="20rem" fluid /></Card.Link>
@@ -52,12 +57,13 @@ const MeetTheDevPage = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={3} md={3}>
-            <Card>
-              <Card.Img variant="top" src="/src/assets/nate.png" />
+          <Col>
+            <Card className="developersCard">
+              <Card.Img src="/src/assets/hazel.png" />
               <Card.Body>
+                <Card.Title>Hazel Whitfield</Card.Title>
                 <Card.Text>
-                  Nate Rollins
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ullamcorper magna. Phasellus vulputate metus id leo ullamcorper sodales.
                 </Card.Text>
                 <Card.Text>
                   <Card.Link href="https://www.linkedin.com/in/naterollins/" title="LinkedIn" target="_blank"><Image src="../src/assets/linkedin-square-icon.svg" width="20rem" fluid /></Card.Link>

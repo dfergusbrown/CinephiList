@@ -1,0 +1,25 @@
+.infogrid {
+    display: grid;
+    grid-template-areas:
+        'movieTitle movieTitle movieTitle movieTitle' 
+        'director1 director2 . . '
+        'writer1 writer2 writer2 .'
+        'actor1 actor2 actor2 .'
+        'genre1 genre2 genre2 .'
+        'released1 released2 . .'
+        ;
+    gap: 15px;
+    padding: 10px;
+}
+
+.director1 { grid-area: director1;}
+.director2 { grid-area: director2;}
+.writer1 { grid-area: writer1;}
+.writer2 { grid-area: writer2;}
+.actor1 { grid-area: actor1;}
+.actor2 { grid-area: actor2;}
+.genre1 { grid-area: genre1;}
+.genre2 { grid-area: genre2;}
+.released1 { grid-area: released1;}
+.released2 { grid-area: released2;}
+.movieTitle { grid-area: movieTitle;}

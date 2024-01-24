@@ -1,6 +1,7 @@
 import useApiRequest from "../components/useApiRequest"
 import { Container, Row, Col, Button } from "react-bootstrap"
 import { useLocation } from "react-router-dom"
+import './DetailPage.css';
 
 const DetailPage = (props) => {
     const location = useLocation()

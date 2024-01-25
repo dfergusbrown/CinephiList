@@ -8,6 +8,7 @@ import DetailPage from './Pages/DetailPage';
 import BrowsePage from './Pages/BrowsePage';
 import LoginPage from './Pages/LoginPage';
 import MeetTheDevPage from './Pages/MeetTheDevPage';
+import UserPage from './Pages/UserPage';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/browse' element={<BrowsePage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/meetthedevelopers' element={<MeetTheDevPage />} />
+        <Route path='/userPage' element={<UserPage />} />
       </Routes>
       <Footer />
     </>

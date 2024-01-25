@@ -5,10 +5,10 @@ export const userSlice = createSlice({
     initialState: [],
     reducers: {
         addFilm: (state, action) => {
-            [...state, action.payload]
+            state.push(action.payload)
         },
         removeFilm: (state, action) => {
-            state = state.filter(item => item !== action.payload)
+            return state.filter(item => item !== action.payload)
         }
     }
 })

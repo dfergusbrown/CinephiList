@@ -77,15 +77,12 @@ footer {
 
 
 .meetTheDevelopers{
-  margin-top: 5;
-  width: 50%;
-  padding-bottom: 5rem;
-  margin:auto;
+  margin-top: 5%;
+  padding-bottom: 20%;
 }
 
 .developersCard{
-  width: 24rem; 
-  margin-top: 6%;
+  margin: 5%;
   background-color: rgb(21, 23, 21);
   border-color: white;
   border-width: small;

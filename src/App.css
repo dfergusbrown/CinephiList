@@ -68,6 +68,7 @@ footer {
   width: 100%;
   height: 3.5rem;
   background-color: #ffffff;
+  margin-top: 5%;
 }
 
 .footerText {
@@ -111,3 +112,30 @@ footer {
 #detailsList {
   margin-bottom: 2rem;
 }
+
+
+#plot {}
+
+
+.meetTheDevelopers{
+  margin-top: 5;
+  width: 50%;
+  padding-bottom: 5rem;
+  margin:auto;
+}
+
+.developersCard{
+  width: 24rem; 
+  margin-top: 6%;
+  background-color: rgb(21, 23, 21);
+  border-color: white;
+  border-width: small;
+  color: #ffffff;
+  box-shadow: 10px 10px;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.03);
+}
+

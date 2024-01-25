@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
-function MyNavbar() {
+function Header() {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top" className="bg-body-tertiary">
       <Container>
@@ -11,8 +11,8 @@ function MyNavbar() {
           <Nav className="me-auto"></Nav>
           <Nav>
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#browse">Browse</Nav.Link>
-            <Nav.Link href="#login">Login</Nav.Link>
+            <Nav.Link href="browse">Browse</Nav.Link>
+            <Nav.Link href="login">Login</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -20,4 +20,4 @@ function MyNavbar() {
   )
 };
 
-export default MyNavbar;
+export default Header;

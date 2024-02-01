@@ -13,9 +13,49 @@ body {
   margin-bottom: 3%;
 }
 
-.movie-app .row>* {
+.movieItem {
   flex: 1 1 160px;
+  position: relative;
 }
+
+.overlay {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+}
+
+.movieItem:hover .overlay {
+  display: block;
+  background: rgba(0,0,0,.3)
+}
+
+.favButton {
+  justify-self: center;
+  align-items: end;
+  width: 50%;
+  margin: 200px auto 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.favButton a {
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.movieItem:hover .favButton {
+  opacity: 1;
+}
+
 
 .search-form {
   margin-top: 5%;
@@ -73,19 +113,17 @@ footer {
   margin-bottom: 2rem;
 }
 
+
 #plot {}
 
 
 .meetTheDevelopers{
-  margin-top: 5;
-  width: 50%;
-  padding-bottom: 5rem;
-  margin:auto;
+  margin-top: 5%;
+  padding-bottom: 20%;
 }
 
 .developersCard{
-  width: 24rem; 
-  margin-top: 6%;
+  margin: 5%;
   background-color: rgb(21, 23, 21);
   border-color: white;
   border-width: small;
@@ -97,3 +135,4 @@ footer {
 .card:focus-within {
   transform: scale(1.03);
 }
+
